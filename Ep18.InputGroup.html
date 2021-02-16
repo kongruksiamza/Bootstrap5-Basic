@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Group</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>  
+</head>
+<body>
+    <div class="container" style="margin-top: 20px;">
+        <!-- Text Field -->
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">ชื่อ</span>
+            </div>
+            <input type="text" placeholder="ป้อนชื่อพร้อมคำนำหน้า" class="form-control">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">นามสกุล</span>
+            </div>
+            <input type="text" placeholder="ป้อนนามสกุล" class="form-control">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">เบอร์โทรศัพท์</span>
+            </div>
+            <input type="tel" placeholder="06x-xxx-xxx-x" class="form-control">
+        </div>
+        <!-- Multiple TextField -->
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">ชื่อและนามสกุล</span>
+            </div>
+            <input type="text" placeholder="ป้อนชื่อพร้อมคำนำหน้า" class="form-control">
+            <input type="text" placeholder="ป้อนนามสกุล" class="form-control">
+        </div>
+        <!-- Checkbox -->
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+                <input type="checkbox">
+              </div>
+            <input type="text" class="form-control">
+        </div>
+
+        <!-- Radio-->
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+                <input type="radio">
+              </div>
+            <input type="text" class="form-control">
+        </div>
+        <!-- Button-->
+        <div class="input-group mb-3">
+            <input type="text" placeholder="ค้นหาข้อมูล" class="form-control">
+            <div class="input-group-prepend">
+                <button class="btn btn-success">Search</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

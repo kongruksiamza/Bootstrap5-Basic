@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>  
+</head>
+<body>
+    <div class="container" style="margin-top: 20px;">
+        <form> 
+            <!-- Text Field -->
+            <div class="mb-3">
+                <label for="name" class="form-label">ชื่อ</label>
+                <input type="text" placeholder="กรุณาป้อนชื่อ" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">อีเมล</label>
+                <input type="email" placeholder="กรุณาป้อนอีเมล" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">รหัสผ่าน</label>
+                <input type="password" placeholder="กรุณาป้อนรหัสผ่าน" class="form-control">
+            </div>
+            <!-- Select -->
+            <div class="mb-3">
+                <label for="job" class="form-label">อาชีพ</label>
+                <select name="job" class="form-select">
+                    <option>Programmer</option>
+                    <option>Developer</option>
+                    <option>อาจารย์</option>
+                    <option>ทนายความ</option>
+                </select>
+            </div>
+            <!-- TextArea -->
+            <div class="mb-3">
+                <label class="form-label">ที่อยู่</label>
+                <textarea  class="form-control" cols="30" rows="5"></textarea>
+            </div>
+            <!-- File -->
+            <div class="mb-3">
+                <label class="form-label">เอกสาร</label>
+                <input type="file" class="form-control">
+            </div>
+            <!-- Range -->
+            <div class="mb-3">
+                <label class="form-label">ประสบการณ์ทำงาน</label>
+                <input type="range" min="1"  max="5" value="5" class="form-range">
+            </div>
+            <input type="submit" name="" id="" value="บันทึกข้อมูล" class="btn btn-success">
+        </form>
+        <br>
+        <!-- Form Check -->
+        <form class="mb-3">
+            <div>
+                <label class="form-label">ชื่อ</label>
+                <input type="text" placeholder="กรุณาป้อนชื่อ" class="form-control">
+            </div>
+            <div>
+                <label class="form-label">รหัสผ่าน</label>
+                <input type="password" placeholder="กรุณาป้อนรหัสผ่าน" class="form-control">
+            </div>
+            <div class="form-check">
+                <label>
+                    <input type="checkbox" name="" class="form-check-input">ฉันยอมรับเงื่อนไข
+                </label>
+            </div>
+            <button class="btn btn-danger">ส่งข้อมูล</button>
+        </form>
+        <br>
+        <!-- Validation -->
+        <div class="mb-3">
+            <label for="name" class="form-label">ชื่อ</label>
+            <input type="text" placeholder="กรุณาป้อนชื่อ" class="form-control is-valid">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">อีเมล</label>
+            <input type="email" placeholder="กรุณาป้อนอีเมล" class="form-control is-invalid">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">รหัสผ่าน</label>
+            <input type="password" placeholder="กรุณาป้อนรหัสผ่าน" class="form-control is-invalid">
+            <div class="invalid-feedback">ป้อนรหัสผ่านไม่ถูกต้อง</div>
+        </div>
+    </div>
+</body>
+</html>
