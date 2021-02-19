@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>  
+</head>
+<body>
+    <div class="container my-2">
+        <!-- การสร้าง FlexBox -->
+        <div class="d-flex bg-info">
+            <div class="p-4 bg-warning">Item 1</div>
+            <div class="p-4 bg-warning">Item 2</div>
+            <div class="p-4 bg-warning">Item 3</div>
+        </div>
+        <br>
+        <!-- กำหนดทิศทาง -->
+        <div class="d-flex flex-row bg-info">
+            <div class="p-4 bg-warning">Item 1</div>
+            <div class="p-4 bg-warning">Item 2</div>
+            <div class="p-4 bg-warning">Item 3</div>
+        </div>
+        <br>
+        <!-- row-reverse -->
+        <div class="d-flex flex-row-reverse bg-info">
+            <div class="p-4 bg-warning">Item 1</div>
+            <div class="p-4 bg-warning">Item 2</div>
+            <div class="p-4 bg-warning">Item 3</div>
+        </div>
+        <br>
+
+        <div class="d-flex flex-column bg-info">
+            <div class="p-4 bg-warning">Item 1</div>
+            <div class="p-4 bg-warning">Item 2</div>
+            <div class="p-4 bg-warning">Item 3</div>
+        </div>
+        <!-- column reverse -->
+        <br>
+        <div class="d-flex flex-column-reverse bg-info">
+            <div class="p-4 bg-warning">Item 1</div>
+            <div class="p-4 bg-warning">Item 2</div>
+            <div class="p-4 bg-warning">Item 3</div>
+        </div>
+        <br>
+        <!-- Horizontal Alignment -->
+        <div class="d-flex justify-content-start bg-info">
+            <div class="p-4 bg-warning">Item 1</div>
+            <div class="p-4 bg-warning">Item 2</div>
+            <div class="p-4 bg-warning">Item 3</div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center bg-info">
+            <div class="p-4 bg-warning">Item 1</div>
+            <div class="p-4 bg-warning">Item 2</div>
+            <div class="p-4 bg-warning">Item 3</div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-end bg-info">
+            <div class="p-4 bg-warning">Item 1</div>
+            <div class="p-4 bg-warning">Item 2</div>
+            <div class="p-4 bg-warning">Item 3</div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-around bg-info">
+            <div class="p-4 bg-warning">Item 1</div>
+            <div class="p-4 bg-warning">Item 2</div>
+            <div class="p-4 bg-warning">Item 3</div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-between bg-info">
+            <div class="p-4 bg-warning">Item 1</div>
+            <div class="p-4 bg-warning">Item 2</div>
+            <div class="p-4 bg-warning">Item 3</div>
+        </div>
+        <br>
+
+        <!-- Vertical Alignment -->
+        <div class="d-flex align-items-start bg-info" style="height: 200px;">
+            <div class="p-4 bg-success text-white">Item 1</div>
+            <div class="p-4 bg-success text-white">Item 2</div>
+            <div class="p-4 bg-success text-white">Item 3</div>
+        </div>
+        <br>
+        <div class="d-flex align-items-center bg-info" style="height: 200px;">
+            <div class="p-4 bg-success text-white">Item 1</div>
+            <div class="p-4 bg-success text-white">Item 2</div>
+            <div class="p-4 bg-success text-white">Item 3</div>
+        </div>
+        <br>
+        <div class="d-flex align-items-end bg-info" style="height: 200px;">
+            <div class="p-4 bg-success text-white">Item 1</div>
+            <div class="p-4 bg-success text-white">Item 2</div>
+            <div class="p-4 bg-success text-white">Item 3</div>
+        </div>
+        <br>
+        <div class="d-flex align-items-stretch bg-info" style="height: 200px;">
+            <div class="p-4 bg-success text-white">Item 1</div>
+            <div class="p-4 bg-success text-white">Item 2</div>
+            <div class="p-4 bg-success text-white">Item 3</div>
+        </div>
+        <br>
+        <div class="d-flex align-items-baseline bg-info" style="height: 200px;">
+            <div class="p-4 bg-success text-white">Item 1</div>
+            <div class="p-4 bg-success text-white">Item 2</div>
+            <div class="p-4 bg-success text-white">Item 3</div>
+        </div>
+        <br>
+        <!-- Align Self Item -->
+        <div class="d-flex bg-info" style="height: 200px;">
+            <div class="p-4 bg-success text-white align-self-start">Start</div>
+            <div class="p-4 bg-success text-white align-self-center">Center</div>
+            <div class="p-4 bg-success text-white align-self-end">End</div>
+            <div class="p-4 bg-success text-white align-self-stretch">Stretch</div>
+            <div class="p-4 bg-success text-white align-self-baseline">baseline</div>
+        </div>
+    </div>
+</body>
+</html>
