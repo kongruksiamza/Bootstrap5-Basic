@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="js/bootstrap.js"></script>  
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 m-auto">
+                <!-- การสร้าง Carousel -->
+                <div class="carousel slide" id="slider1" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <button  data-bs-target="#slider1" data-bs-slide-to="0"></button>
+                            <button  data-bs-target="#slider1" data-bs-slide-to="1"></button>
+                            <button  class="active" data-bs-target="#slider1" data-bs-slide-to="2"></button>
+                            <button  data-bs-target="#slider1" data-bs-slide-to="3"></button>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <img src="https://cdn.pixabay.com/photo/2021/02/08/15/02/mountains-5995081__340.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>ภูเขา</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, nobis.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://cdn.pixabay.com/photo/2020/06/15/01/06/sunset-5299957__340.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>ทะเล</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, nobis.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="https://cdn.pixabay.com/photo/2021/01/18/17/46/sunset-5928907__340.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>พระอาทิตย์ตกดิน</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, nobis.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://cdn.pixabay.com/photo/2021/01/21/14/10/egret-5937499__340.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>หมอก</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, nobis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ควบคุมการ Slide ผ่านปุ่ม -->
+                        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider1">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider1">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

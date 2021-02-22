@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse & Accordion</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.js"></script>  
+</head>
+<body>
+    <div class="container my-2">
+          <!-- JavaScript Widget -->
+          <!-- Collapse -->
+            <button class="btn btn-success" 
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse-content">ดูข้อมูลเพิ่มเติม</button>  
+            <!-- Content -->
+            <br>
+            <div id="collapse-content" class="collapse my-2">
+                <div class="card">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus illum dignissimos nemo dolore voluptas enim, incidunt dolor! Tempora eius laudantium quidem corrupti velit recusandae hic accusamus quos repellat rem!</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+          <!-- Accordion -->
+          <div id="accordion-basic" class="accordion">
+                <div class="accordion-item">
+                    <!-- หัวข้อหรือเมนู -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#content1"
+                        >ท่องเที่ยว
+                        </button>
+                    </h2>
+                    <!-- Content -->
+                    <div id="content1">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum porro, quasi, veniam tempore modi beatae quam atque aliquam iste, cumque ipsum itaque error pariatur culpa laboriosam assumenda adipisci perspiciatis nobis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <!-- หัวข้อหรือเมนู -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#content2"
+                        >อาหาร
+                        </button>
+                    </h2>
+                    <!-- Content -->
+                    <div id="content2">
+                        <div class="accordion-body">
+                            <img src="https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032__340.jpg" alt="">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum porro, quasi, veniam tempore modi beatae quam atque aliquam iste, cumque ipsum itaque error pariatur culpa laboriosam assumenda adipisci perspiciatis nobis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <!-- หัวข้อหรือเมนู -->
+                    <h2 class="accordion-header">
+                        <button class="accordion-button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#content3"
+                        >สุขภาพ
+                        </button>
+                    </h2>
+                    <!-- Content -->
+                    <div id="content3">
+                        <div class="accordion-body">
+                            <img src="https://cdn.pixabay.com/photo/2017/08/07/14/02/people-2604149__340.jpg" alt="">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum porro, quasi, veniam tempore modi beatae quam atque aliquam iste, cumque ipsum itaque error pariatur culpa laboriosam assumenda adipisci perspiciatis nobis.</p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+    </div>
+</body>
+</html>
